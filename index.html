@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <section class="cabecera ancho">
+        <div class="logo">
+            <img src="imagenes/logotransparente.png" alt="">
+        </div>
+        <form class="formulario"  action="guardar.php" method="post" name="formulario">
+            <label for=""> <span>*</span>Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos">
+            <label for="">Sexo:</label>
+            <input type="radio" value="mujer" name="genero" id="mujer"><label for="">M</label>
+            <input type="radio" value="hombre" name="genero" id="hombre"><label for="">H</label>
+            <br><br>
+            <label for="">Fecha de nacimiento:</label>
+            <select name="dia" id="dia">
+                <option value="dia">dia</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+
+            </select>
+            <select name="mes" id="mes">
+                <option value="mes">mes</option>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+            <select name="anio" id="anio">
+                <option value="anio">año</option>
+            </select>
+            <button class="btn" id="boton" type="button" value="enviar" 
+            onClick="validar()">Enviar</button>
+        </form>
+    </section>
+    <!-- Menu -->
+    <section class="menu ancho">
+        <a class="menuSeleccion" href="">Inicio</a>
+        <a class="menuSeleccion" href="">Requisitos</a>
+        <a class="menuSeleccion" href="">Materias</a>
+        <a class="menuSeleccion" href="">Organigrama</a>
+        <a class="menuSeleccion" href="">Instalaciones</a>
+        <a class="menuSeleccion" href="">Inscripciones</a>
+        <a class="menuSeleccion" href="">Contacto</a>
+    </section>
+    <!-- Imagen central -->
+    <section class="imgCentral ancho">
+        <img src="imagenes/fotoslide.jpg" alt="">
+    </section>
+    <!-- Informacion -->
+    <section class="informacion ancho">
+        <div class="contInf">
+            <img class="engrane" src="imagenes/engrane.png" alt="">
+            <span class="titulo1 rojo">UNIVERSIDAD DE PRESTIGIO</span>
+            <hr class="linea">
+            <img class="foto1" src="imagenes/foto1.jpg" alt="">
+            <p>Puede que despues de tu carrera quieras estudiar una maestria o un doctorado que te permita especializarte. Hay oportunidades muy interesantes para estudiar con buenas becas en el extranjero.</p>
+        </div>
+        <div class="contInf docentes">
+            <img class="engrane" src="imagenes/engrane.png" alt="">
+            <span class="titulo1">DOCENTES</span>
+            <hr class="linea">
+            <img class="foto1" src="imagenes/foto2.jpg" alt="">
+            <p>Puede que despues de tu carrera quieras estudiar una maestria o un doctorado que te permita especializarte. Hay oportunidades muy interesantes para estudiar con buenas becas en el extranjero.</p>
+        </div>
+        <div class="contInf instalaciones">
+            <img class="engrane" src="imagenes/engrane.png" alt="">
+            <span class="titulo1">INSTALACIONES</span>
+            <hr class="linea">
+            <div class="cont2img">
+                <img class="img1" src="imagenes/instalaciones1.jpg">
+                <img class="img1" src="imagenes/instalaciones2.jpg">
+            </div>
+            <img class="foto1" src="imagenes/instalaciones3.jpg" alt="">
+        </div>
+    </section>
+    <!-- Perfil egresado y campo de trabajo -->
+    <section class="informacion2 ancho">
+        <div class="perfilEgresado">
+            <h2>Perfil del Egresado</h2>
+            <img class="vineta" src="imagenes/vineta1.jpg" alt="">
+            <span class="textoVineta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos neque porro accusamus accusantium</span>
+            <br>
+            <img class="vineta" src="imagenes/vineta1.jpg" alt="">
+            <span class="textoVineta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos neque porro accusamus accusantium</span>
+            <br>
+            <img class="vineta" src="imagenes/vineta1.jpg" alt="">
+            <span class="textoVineta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos neque porro accusamus accusantium</span>
+            <br>
+            <img class="vineta" src="imagenes/vineta1.jpg" alt="">
+            <span class="textoVineta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos neque porro accusamus accusantium</span>
+        </div>
+        <div class="campoTrabajo">
+            <h2>Campo de trabajo</h2>
+            <p>Empresas y organismos en todos los campos de la actividad economica, gubernamental y de educacion, en donde se puedan optimizar los procesos al automatizar el manejo de la informacion de las empresas</p>
+            <a href="#" target="_blank">ver mas</a>
+        </div>
+    </section>
+    <!-- Pie de pagina -->
+    <footer class="pie ancho">
+        <div class="cajaPie informacion3">
+            <h3>INSTITUTO TECNOLOGICO DE MERIDA</h3>
+            <p>Av. Tecnologico Km. 4.5 S/N C.P. 97118</p>
+            <p>Preguntas y comentarios:<br>www@itmerida.mx</p>
+            <p>Tel:(999) 964-5000, 964-5001</p>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.504995966414!2d-89.62435088506763!3d21.012470586007225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5676a65077d641%3A0x39dfe74777312656!2sTecNM%20-%20Campus%20M%C3%A9rida!5e0!3m2!1ses-419!2smx!4v1681693544409!5m2!1ses-419!2smx" width="450PX" height="300PX" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="cajaPie infoAlumno">
+            <img src="imagenes/logotransparente.png" alt="">
+            <p>Francisco Felipe Amaro Rejon</p>
+            <p>7SA</p>
+            <p>Programacion Web</p>
+        </div>
+    </footer>
+</body>
+</html>
